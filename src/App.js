@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Count from './components/Count'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <div>App
+      <Count /> 
+     </div>
+  )
 }
 
 export default App;
+
+
+//STORE  -- holds the updated value from reducer
+//REDUCER -- updates the state based on action-type passed from UI
+//UI     -- Subscribe to store and gets updated component
